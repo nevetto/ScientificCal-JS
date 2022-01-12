@@ -1,0 +1,16 @@
+.conic-gradient {
+    background: conic-gradient(from 90deg, #fff, #000,  #fff, #000);
+    /* background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red); */
+    border: 5px solid black;
+    outline: none;
+  }
+
+.inp {
+    border: 2px solid;
+    
+    box-shadow: 5px 10px 18px black;
+    margin-bottom: 15px;
+    border-radius: 15px;
+  }
+
+  
