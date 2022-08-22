@@ -1,16 +1,194 @@
 .conic-gradient {
-    background: conic-gradient(from 90deg, #fff, #000,  #fff, #000);
-    /* background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red); */
-    border: 5px solid black;
-    outline: none;
-  }
+  background: conic-gradient(from 90deg, #fff, #000, #fff, #000);
+  /* background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red); */
+  border: 5px solid black;
+  outline: none;
+}
 
 .inp {
-    border: 2px solid;
-    
-    box-shadow: 5px 10px 18px black;
-    margin-bottom: 15px;
-    border-radius: 15px;
-  }
+  border: 2px solid;
+  box-shadow: 5px 10px 18px black;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
 
-  
+
+body>div:nth-child(2) {
+  background-image: url(assets/images/calbackground1.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 45px;
+  font-size: small;
+  font-family: Segoe UI Emoji;
+
+}
+
+body>div:nth-child(2)>div {
+  padding: 20px;
+}
+
+body>div:nth-child(2)>div>div:nth-child(1):first-child {
+  color: beige;
+}
+
+body>div:nth-child(2)>div>div:nth-child(1) div:first-child>p {
+  font-weight: bolder;
+  line-height: 10px;
+}
+
+body>div:nth-child(2)>div>div:nth-child(1) div:first-child>div:nth-child(2) {
+  font-size: small;
+}
+
+body>div:nth-child(2)>div>div:nth-child(1) div:first-child>div:nth-child(3) {
+  font-size: x-small;
+}
+
+.marquee {
+  background-color: #2F2422;
+  width: 95px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px black;
+}
+
+.marquee>marquee:first-child {
+  color: #1cf514;
+}
+
+.marquee>marquee:last-child {
+  color: #7a90f1;
+}
+
+.screen>div {
+  border-style: inset;
+  background-color: #D5E5DA;
+
+}
+
+.screen>div>input:first-child {
+  text-align: center;
+  font-size: large;
+  font-weight: normal;
+  color: #011327;
+  border: none;
+  border-radius: 15px 15px 0px 0px;
+  word-wrap: break-word;
+  margin-bottom: 1px;
+}
+
+.screen>div>input:last-child {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: #011327;
+  border: none;
+  border-radius: 0px 0px 15px 15px;
+  word-wrap: break-word;
+}
+
+.buttonRowOne,
+.buttonRowTwo,
+.buttonRowThree,
+.buttonRowFour {
+  font-size: x-small;
+  align-self: center;
+  text-align: center;
+
+}
+
+.buttonRowOne>div:nth-child(1) {
+  color: #1cf514;
+}
+
+.buttonRowOne>div:nth-child(1)>button,
+.buttonRowOne>div:nth-child(2)>button,
+.buttonRowOne>div:nth-child(4)>button,
+.buttonRowOne>div:nth-child(5)>button {
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+}
+
+.buttonRowOne>div:nth-child(2) {
+  color: #7a90f1;
+}
+
+.buttonRowOne>div:nth-child(3) {
+  color: #1cf514;
+}
+
+.buttonRowOne>div:nth-child(3)>div:nth-child(2)>button:first-child {
+  border-top-left-radius: 15px;
+  height: 35px;
+  width: 35px;
+}
+
+.buttonRowOne>div:nth-child(3)>div:nth-child(2)>button:last-child {
+  border-top-right-radius: 15px;
+  height: 35px;
+  width: 35px;
+}
+
+.buttonRowOne>div:nth-child(3)>div:last-child>button:first-child {
+  border-bottom-left-radius: 15px;
+  height: 35px;
+  width: 35px;
+}
+
+.buttonRowOne>div:nth-child(3)>div:last-child>button:last-child {
+  border-bottom-right-radius: 15px;
+  height: 35px;
+  width: 35px;
+}
+
+.buttonRowOne>div:nth-child(4),
+.buttonRowOne>div:nth-child(5) {
+  color: whitesmoke;
+}
+
+.buttonRowTwo {
+  font-size: x-small;
+  color: whitesmoke;
+}
+
+.buttonRowTwo div:nth-child(1),
+.buttonRowThree div, .buttonRowFour div {
+  justify-content: center;
+}
+
+.buttonRowTwo>div>div {
+  color: #1cf514;
+}
+
+.buttonRowTwo>div>button, .buttonRowFour>div>button {
+  border-radius: 7px;
+  background-color: #2F3034;
+  color: white;
+}
+
+.buttonRowTwo>div:nth-child(1) button,
+.buttonRowThree div:nth-child(1) button, .buttonRowFour div:nth-child(1) button{
+  border-radius: 5px;
+  border-top-left-radius: 17px;
+  background-color: #2F3034;
+  color: white;
+}
+
+.buttonRowTwo>div:nth-child(5) button,
+.buttonRowThree div:nth-child(5) button, .buttonRowFour div:nth-child(5) button {
+  border-top-right-radius: 17px;
+  background-color: #2F3034;
+  color: white;
+}
+
+.buttonRowThree div div, .buttonRowFour div div {
+  color: #1cf514;
+}
+
+.buttonRowThree div button {
+  height: 25px;
+  width: 40px;
+  border-radius: 7px;
+  background-color: #2F3034;
+  color: white;
+}
