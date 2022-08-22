@@ -1,353 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets//vendor/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" type="text/css" href="scientificcalculator.css">
 </head>
-<body>
-    <div class="container-fluid-sm-12" style="background-image: url(images/calbackground1.JPG); background-repeat: no-repeat; width: 350px;border-radius: 45px; font-size: small; font-family: Segoe UI Emoji; margin: 30px 0px 0px 500px; padding-bottom: 15px;">
-        <div class="container-fluid-xs-12">
+
+<body class="container-fluid row pt-4">
+    <div class="col-lg-4 col-md-3 col-sm-1 col-xm-0"></div>
+    <div class="col-lg-4 col-md-6 col-sm-10 col-xm-12">
+        <div>
             <div class="row">
-                <div class="col-6" style="color: beige; padding: 15px 130px 0px 35px;">
-                   <p style="font-weight: bolder; line-height: 10px;">NEVETTO</p>
-                  <div style="font-size: small;">fx991EX</div>
-                  <div style="font-size: x-small;">CLASSW4Z</div>
+                <div class="col-8">
+                    <p>NEVETTO</p>
+                    <div>fx991EX</div>
+                    <div>CLASSW4Z</div>
                 </div>
 
-                <div class="row-6" style="background-color: #2F2422; height: 55px; width: 95px; margin-top: 15px; border-radius: 15px; box-shadow: 5px 10px 18px black;">
-                     
-                    <marquee behavior="" direction="left" id="dem" style="color: #1cf514;padding-top: 10px; ">vgvhhgh</marquee>
-                    <marquee behavior="" direction="right" id="demo" style="color: #7a90f1;padding-bottom: 25px;">hlijklhjkh</marquee>
-                                    
-                    <div > </div>
-                </div>              
-            </div>
-
-            <div class="col-12">
-                <div class="inp" style="border-style: inset;">
-                <input type="text"  id="btn" style="width: 315px; height: 40px; text-align: center; font-size: large;font-weight: normal; background-color:  #D5E5DA; color:#011327; border: none; border-radius: 15px 15px 0px 0px; word-wrap: break-word;" placeholder="0">
-                <input id="myBtn2" type="text" style="width: 315px; height: 40px; text-align: center; font-size: x-large; font-weight: bold; background-color: #D5E5DA; color: #011327; border: none; border-radius:  0px 0px 15px 15px; word-wrap: break-word; word-break: break-all;">
+                <div class="col-4 marquee">
+                    <marquee behavior="" direction="left" id="dem">vgvhhgh</marquee>
+                    <marquee behavior="" direction="right" id="demo">hlijklhjkh</marquee>
                 </div>
             </div>
 
-            <div class="row" style="font-size: x-small; color: whitesmoke;">
-                <div style="padding-left: 50px; color:  #1cf514;">SHIFT</div>
-                <div style="padding-left: 25px; color: #7a90f1;">ALPHA</div>
-                <div style="padding-left: 110px; color: #1cf514;"> <span style="color: white;"> MENU</span> SETUP</div>
-                <div style="padding-left: 15px;">ON</div>
+            <div class="row screen mt-3">
+                <div class="inp">
+                    <input type="text" id="btn" placeholder="0" class="col-12">
+
+                    <input id="myBtn2" type="text" class="col-12">
+                </div>
             </div>
 
-            <div class="col-12">
-
-                <!-- conic-gradient -->
-
-                <button class="conic-gradient" style="border-radius: 50px; height: 35px; width: 35px; margin-left: 15px;"></button>
-                <button class="conic-gradient" style="border-radius: 50px; height: 35px; width: 35px; margin: 0px 15px 15px 15px;"></button>
-                
-                <button  class="conic-gradient" style="border-top-left-radius: 15px; margin:0px 0px 0px 5px; height: 35px; width: 35px; position: relative; top: -10px;"></button>
-                <button class="conic-gradient" style="border-top-right-radius: 15px; height: 35px; width: 35px; position: relative; top: -10px; left: -5px; "></button>
-                 
-                
-                <button class="conic-gradient" style="border-radius: 50px; height: 35px; width: 35px;margin: 7px 15px 15px 15px;"></button>
-                <button class="conic-gradient" style="border-radius: 50px; height: 35px; width: 35px;"></button>
-                             
-            </div>
-            <div>
-                <button class="conic-gradient" style="margin: 0px 0px 0px 142px; border-bottom-left-radius: 15px; height: 35px; width: 35px; position: relative; top: -25px;" ></button>
-                <button class="conic-gradient" style="border-bottom-right-radius: 15px; height: 35px; width: 35px; position: relative; top: -25px; left: -6px;"></button>
-                
-                <!-- main body button -->
-                
-            <div class="row" style="font-size: x-small; color: whitesmoke;">
-                <div style="padding-left: 45px; color: #1cf514;">SQR</div>
-                <div style="padding-left: 25px; color: #1cf514;;">SQRT<span style="color: #7a90f1;;">=</span></div>
-                <div style="padding-left: 140px; color:  #1cf514;">10 <sup>x</sup><span style="color: white;">DEX</span></div>
-                <div style="padding-left: 25px; color:  #1cf514;;">abs</div>
-            </div>
-
-                <button   style="  height: 25px; width: 40px;margin: 0px 10px 0px 15px; border-radius: 5px; border-top-left-radius: 17px; background-color: #2F3034; color: white;" onclick="sq()">x <sup>2</sup></button>
-                <button   style="  height: 25px; width: 40px; border-radius: 7px; background-color: #2F3034; color: white;" onclick="sqrot()">SQRT</button>
-                 
-                  
-
-                   <button   style=" height: 25px; width: 40px;margin: 0px 10px 0px 125px; border-radius: 7px; background-color: #2F3034; color: white;" onclick="myCompute('log(')">log</button>
-                   <button   style="  height: 25px; width: 40px; border-radius: 5px; border-top-right-radius: 17px; background-color: #2F3034; color: white;" onclick=" abso()">ABS</button>
+            <div class="row buttonRowOne">
+                <div class="col">
+                    <div class="text-center">SHIFT</div>
+                    <!-- conic-gradient -->
+                    <button class="conic-gradient"></button>
                 </div>
-
-                
-                <div style="line-height:-5px; ">
-
-                   <div class="row" style="font-size: x-small; color: whitesmoke;">
-                    <div style="padding-left: 35px;color:  #1cf514;">log <span style="color: white;">(</span> <span style="color: #7a90f1;">^</span><span style="color:  #f7f8fb;">)</span></div>
-                    <div style="padding-left: 25px; color: #1cf514;">EXP <span style="color:  #7a90f1;">^</span></div>
-                    <div style="padding-left: 26px;">ALPHA</div>
-                        <div style="padding-left: 25px;"> SETUP</div>
-                        <div style="padding-left: 30px;">ON</div>
-                    <div style="padding-left: 40px;">ON</div>
+                <div class="col text-center">
+                    <div class="text-center">ALPHA</div>
+                    <!-- conic-gradient -->
+                    <button class="conic-gradient"></button>
                 </div>
-    
-                    <button   style="  height: 25px; width: 40px;margin: 0px 12px 0px 15px; border-radius: 7px;background-color: #2F3034; color: white;" onclick="changevalue(btn.value) ">(-)</button>
-                    <button   style="  height: 25px; width: 40px; border-radius: 7px;background-color: #2F3034; color: white;" onclick="powpow()">^</button>
-
-                    <button   style=" height: 25px; width: 40px;margin: 0px 12px 0px 10px; border-radius: 7px;background-color: #2F3034; color: white;" onclick="ftrh('!')">!</button>
-                    <button   style="  height: 25px; width: 40px; border-radius: 7px; background-color: #2F3034; color: white;" onclick=" myCompute('sin(')">sin</button>
-                                  
-    
-                    <button   style=" height: 25px; width: 40px;margin: 0px 12px 0px 10px; border-radius: 7px; background-color: #2F3034; color: white;"onclick="myCompute('cos(')">cos</button>
-                    <button   style="  height: 25px; width: 40px; border-radius: 7px;background-color: #2F3034; color: white;" onclick="myCompute('tan(')">tan</button>
-                </div>
-
-            
-                    <div class="row" style="font-size: x-small; color: whitesmoke;">
-                        <div style="padding-left: 40px;">SHIFT</div>
-                        <div style="padding-left: 25px;">ALPHA</div>
-                        <div style="padding-left: 25px;">ALPHA</div>
-                        <div style="padding-left: 25px;">ALPHA</div>
-                        <div style="padding-left: 10px;"> SETUP</div>
-                        <div style="padding-left: 15px;">ON</div>
+                <div class="col">
+                    <div class="text-center">MENU</div>
+                    <div class="row">
+                        <!-- conic-gradient -->
+                        <button class="conic-gradient"></button>
+                        <button class="conic-gradient"></button>
                     </div>
-        
-                        <button   style="  height: 25px; width: 40px;margin:  0px 12px 0px 15px; border-radius: 5px; border-bottom-left-radius: 17px; background-color: #2F3034; color: white;" onclick="expn()">EXP</button>
-                        <button   style="  height: 25px; width: 40px; border-radius: 7px; background-color: #2F3034; color: white; background-color: #2F3034; color: white;" onclick="lnl()">ln</button>
-    
-                        <button   style=" height: 25px; width: 40px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: #2F3034; color: white;" onclick="operat('(')">(</button>
-                        <button   style="   height: 25px; width: 40px; background-color: #2F3034; color: white; border-radius: 7px;" onclick="operat(')')">)</button>
-                                      
-        
-                        <button   style="  height: 25px; width: 40px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: #2F3034; color: white;" onclick="operat('%')">%</button>
-                        <button   style="   height: 25px; width: 40px; border-radius: 5px; border-bottom-right-radius: 17px; background-color: #2F3034; color: white; " onclick="mt('M+')">M+</button>
+                    <div class="row">
+                        <!-- conic-gradient -->
+                        <button class="conic-gradient"></button>
+                        <button class="conic-gradient"></button>
+                    </div>
                 </div>
-                 <!-- number buttons -->
-
-               <div class="container-fluid-row">
-
-                <div class="row" style="font-size: x-small; color: whitesmoke;">
-                    <div style="padding-left: 40px;">SHIFT</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 70px;"> SETUP</div>
+                <div class="col">
+                    <div class="text-center"> SETUP</div>
+                    <!-- conic-gradient -->
+                    <button class="conic-gradient"></button>
                 </div>
-
-
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 12px 0px 16px; border-radius: 5px; border-top-left-radius: 17px; background-color: white; color: #2F3034; font-weight: bolder;" onclick="myBtn(7)">7</button>
-                <button   style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;" onclick="myBtn(8)">8</button>
-
-                <button   style=" height: 32px; width: 51.7px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: white; color: #2F3034;font-weight: bolder;" onclick="myBtn(9)">9</button>
-                <button onclick="clearAll('')" style=" height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;font-weight: bolder;">AC</button>
-                              
-
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 0px 0px 10px; border-radius: 7px; background-color: #770604; color: white; border-top-right-radius: 17px; font-weight: bolder;" onclick="del()">DEL</button>
-
-                <div class="row" style="font-size: x-small; color: whitesmoke;">
-                    <div style="padding-left: 40px;">SHIFT</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 70px;"> SETUP</div>
+                <div class="col ">
+                    <div class="text-center">ON</div>
+                    <!-- conic-gradient -->
+                    <button class="conic-gradient"></button>
                 </div>
-
-                
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 12px 0px 16px; border-radius: 5px; background-color: white; color: #2F3034;font-weight: bolder;" onclick="myBtn(4)">4</button>
-                <button   style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;" onclick="myBtn(5)">5</button>
-
-                <button   style=" height: 32px; width: 51.7px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: white; color: #2F3034;font-weight: bolder;"onclick="myBtn(6)">6</button>
-                <button   style="   height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;" onclick="operat('*')">x</button>
-                              
-
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 0px 0px 10px; border-radius: 7px; background-color: #2C48A7; color: white;" onclick="operat('/')">/</button>
-
-                <div class="row" style="font-size: x-small; color: whitesmoke;">
-                    <div style="padding-left: 40px;">SHIFT</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 70px;"> SETUP</div>
-                </div>
-
-                
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 12px 0px 16px; border-radius: 5px; background-color: white; color: #2F3034;font-weight: bolder;" onclick="myBtn(1)">1</button>
-                <button   style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder; " onclick="myBtn(2)">2</button>
-
-                <button   style=" height: 32px; width: 51.7px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;" onclick="myBtn(3)">3</button>
-                <button   style="   height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;" onclick="operat('+')">+</button>
-                              
-
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: #2C48A7; color: white;" onclick="operat('-')">-</button>
-
-                <div class="row" style="font-size: x-small; color: whitesmoke;">
-                    <div style="padding-left: 40px;">SHIFT</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 25px;">ALPHA</div>
-                    <div style="padding-left: 70px;color: #1cf514;;">solve<span style="color: #7a90f1;;">=</span></div>
-                </div>
-
-                
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 12px 0px 16px; border-radius: 5px;border-bottom-left-radius: 17px; background-color: white; color: #2F3034; font-weight: bolder;" onclick="myBtn(0)">0</button>
-                <button   style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;" onclick="operat('.')">.</button>
-
-                <button   style=" height: 32px; width: 51.7px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;" onclick="pi()">Pi</button>
-                <button   style="   height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;" onclick="minPl('+-')">+-</button>
-                              
-
-                <button   style="  height: 32px; width: 51.7px;margin:  0px 12px 0px 10px; border-radius: 7px; background-color: #2C48A7; color: white; border-bottom-right-radius: 17px;" onclick="eva('=')">Ans</button>
-
-               </div> 
             </div>
-              
+            <div class="">
+
+                <!-- main body button -->
+
+                <div class="row buttonRowTwo pt-1">
+                    <div class="col">
+                        <div class="row">SQR</div>
+                        <button onclick="sq()">x <sup>2</sup></button>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">SQRT<span style="color: #7a90f1;;">=</span></div>
+                        <button onclick="sqrot()">SQRT</button>
+                    </div>
+                    <div class="col">
+                        <div class="row">10 <sup>x</sup><span style="color: white;">DEX</span></div>
+                        <button onclick="myCompute('log(')">log</button>
+                    </div>
+                    <div class="col">
+                        <div class="row"><span style="color: white;">Log</span></div>
+                        <button onclick="myCompute('log(')">log</button>
+                    </div>
+                    <div class="col">
+
+                        <div class="row">abs</div>
+                        <button onclick=" abso()">ABS</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row buttonRowThree pt-1">
+                <div class="col">
+                    <div class="row">log <span style="color: white;">(</span> <span
+                            style="color: #7a90f1;">^</span><span style="color:  #f7f8fb;">)</span></div>
+                    <button onclick="changevalue(btn.value) ">(-)</button>
+                </div>
+                <div class="col">
+                    <div class="row">EXP <span style="color:  #7a90f1;">^</span></div>
+                    <button onclick="powpow()">^</button>
+                </div>
+                <div class="col">
+                    <div class="row">tan</div>
+                    <button onclick="myCompute('tan(')">tan</button>
+                </div>
+                <div class="col">
+                    <div class="row"> sin</div>
+                    <button onclick=" myCompute('sin(')">sin</button>
+                </div>
+                <div class="col">
+                    <div class="row">cos</div>
+                    <button onclick="myCompute('cos(')">cos</button>
+                </div>
+            </div>
+
+
+            <div class="row buttonRowFour pt-1">
+                <div class="col">
+                    <div class="row">cos</div>
+                    <button onclick="expn()">EXP</button>
+                </div>
+                <div class="col">
+                    <div class="row">cos</div>
+                    <button onclick="lnl()">ln</button>
+                </div>
+                <div class="col">
+                    <div class="row">cos</div>
+                    <button onclick="operat('(')">(</button>
+                </div>
+                <div class="col">
+                    <div class="row">cos</div>
+                    <button onclick="operat(')')">)</button>
+
+                </div>
+                <div class="col">
+                    <div class="row">cos</div>
+                    <button onclick="operat('%')">%</button>
+
+
+                </div>
+
+                <!-- <div class="col">
+                    <div class="row">cos</div>
+                    <button onclick="mt('M+')">M+</button>
+                </div> -->
+
+
+
+
+
+
+
+            </div>
+            <!-- number buttons -->
+
+            <div class="container-fluid-row">
+
+                <div class="row buttonRowFive pt-4">
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 5px; border-top-left-radius: 17px; background-color: white; color: #2F3034; font-weight: bolder;"
+                            onclick="myBtn(7)">7</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;"
+                            onclick="myBtn(8)">8</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style=" height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034;font-weight: bolder;"
+                            onclick="myBtn(9)">9</button>
+                    </div>
+                    <div class="col">
+                        <button onclick="clearAll('')"
+                            style=" height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;font-weight: bolder;">AC</button>
+
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: #770604; color: white; border-top-right-radius: 17px; font-weight: bolder;"
+                            onclick="del()">DEL</button>
+                    </div>
+                </div>
+                <div class="row buttonRowFive pt-4">
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 5px; background-color: white; color: #2F3034;font-weight: bolder;"
+                            onclick="myBtn(4)">4</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;"
+                            onclick="myBtn(5)">5</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style=" height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034;font-weight: bolder;"
+                            onclick="myBtn(6)">6</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="   height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;"
+                            onclick="operat('*')">x</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: #2C48A7; color: white;"
+                            onclick="operat('/')">/</button>
+                    </div>
+                </div>
+                <div class="row buttonRowFive pt-4">
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 5px; background-color: white; color: #2F3034;font-weight: bolder;"
+                            onclick="myBtn(1)">1</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder; "
+                            onclick="myBtn(2)">2</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style=" height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;"
+                            onclick="myBtn(3)">3</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="   height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;"
+                            onclick="operat('+')">+</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: #2C48A7; color: white;"
+                            onclick="operat('-')">-</button>
+                    </div>
+                </div>
+                <div class="row buttonRowFive pt-4">
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 5px;border-bottom-left-radius: 17px; background-color: white; color: #2F3034; font-weight: bolder;"
+                            onclick="myBtn(0)">0</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;"
+                            onclick="operat('.')">.</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style=" height: 32px; width: 51.7px; border-radius: 7px; background-color: white; color: #2F3034; font-weight: bolder;"
+                            onclick="pi()">Pi</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="   height: 32px; width: 51.7px; background-color: #2C48A7; color: white; border-radius: 7px;"
+                            onclick="minPl('+-')">+-</button>
+                    </div>
+                    <div class="col">
+                        <button
+                            style="  height: 32px; width: 51.7px; border-radius: 7px; background-color: #2C48A7; color: white; border-bottom-right-radius: 17px;"
+                            onclick="eva('=')">Ans</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    </div>
     </div>
 
     <script>
 
         var today = new Date();
-        
-        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-        document.getElementById('dem').innerHTML=date;
-        
-                var today = new Date();
-                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-                document.getElementById('demo').innerText=time;
-               
-        
-                 
-                
-                function myBtn(a) {
-                    btn.value +=a;        
-                }
-        
-                function operat(ope) {
-                    btn.value +=ope;
-                }
-               
+
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        document.getElementById('dem').innerHTML = date;
+
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.getElementById('demo').innerText = time;
+
+
+
+
+        function myBtn(a) {
+            btn.value += a;
+        }
+
+        function operat(ope) {
+            btn.value += ope;
+        }
+
         function clearAll() {
             btn.value = ' ';
             myBtn2.value = ' ';
-         }
-        
-        function eva(){
+        }
+
+        function eva() {
             myBtn2.value = eval(btn.value);
         }
-        
-        function del(){
-            btn.value = btn.value.slice(0 , -1);
+
+        function del() {
+            btn.value = btn.value.slice(0, -1);
             myBtn2.value = '';
         }
-        
+
         function minPl() {
             btn.value = '-' + btn.value;
         }
 
         function pi() {
-            
-           myBtn2.value+=Math.PI/180;
+
+            myBtn2.value += Math.PI / 180;
         }
 
         function lnl() {
-            
-            myBtn2.value+=Math.E/180;
-         }
 
-         function expn() {
-            
-            myBtn2.value+=Math.exp(btn.value);
-         }
+            myBtn2.value += Math.E / 180;
+        }
 
-         function sqrot() {
-            
-            myBtn2.value+=Math.sqrt(btn.value);
-         }
+        function expn() {
 
-         function sq() {
-            
-            myBtn2.value+=Math.pow(btn.value,2);
-         }
-         function powpow() {
-            
-            myBtn2.value+=Math.pow(btn.value,btn.value);
-         }
+            myBtn2.value += Math.exp(btn.value);
+        }
 
-         function loga() {
-            
-            myBtn2.value+=Math.log(btn.value,btn.value);
-         }
+        function sqrot() {
 
-         function abso() {
-            
-            myBtn2.value+=Math.abs(btn.value,btn.value);
-         }
+            myBtn2.value += Math.sqrt(btn.value);
+        }
 
-         function changevalue(input) {
-            if(btn.value.substring(0,1)=="-")
-            btn.value=btn.value.substring(1,btn.value.lenght)
+        function sq() {
+
+            myBtn2.value += Math.pow(btn.value, 2);
+        }
+        function powpow() {
+
+            myBtn2.value += Math.pow(btn.value, btn.value);
+        }
+
+        function loga() {
+
+            myBtn2.value += Math.log(btn.value, btn.value);
+        }
+
+        function abso() {
+
+            myBtn2.value += Math.abs(btn.value, btn.value);
+        }
+
+        function changevalue(input) {
+            if (btn.value.substring(0, 1) == "-")
+                btn.value = btn.value.substring(1, btn.value.lenght)
 
             else
-            btn.value='-'+btn.value
+                btn.value = '-' + btn.value
 
         }
         function mt(m) {
-            
-            myBtn2= 'm';
-         }
 
-         
+            myBtn2 = 'm';
+        }
+
+
 
         // take input from the user
-const number = document.getElementById(btn.value);
+        const number = document.getElementById(btn.value);
 
-// checking if number is negative
-function ftrh(f) {
-    for (i = btn.value; btn.value <= numbevbr; i++)
-    continue;
-    myBtn2.value+=eval(i*number); 
-}
+        // checking if number is negative
+        function ftrh(f) {
+            for (i = btn.value; btn.value <= numbevbr; i++)
+                continue;
+            myBtn2.value += eval(i * number);
+        }
 
 
 
-        function myCompute(v){
-            
-             var a;
-             
-            if (v=='sin(') {
-               a= v;
-            }else if (v=='cos(') {
-                a=v;
-            }else if (v=='tan(') {
-               a=v;
-            }else if (v=='log(') {
-               a=v;
+        function myCompute(v) {
+
+            var a;
+
+            if (v == 'sin(') {
+                a = v;
+            } else if (v == 'cos(') {
+                a = v;
+            } else if (v == 'tan(') {
+                a = v;
+            } else if (v == 'log(') {
+                a = v;
             }
-            btn.value =a; 
+            btn.value = a;
         }
 
         function sin() {
-            return Math.sin(Math.PI/180*btn.value.substring(4, 6) ||  btn.value.substring(4, 5));
+            return Math.sin(Math.PI / 180 * btn.value.substring(4, 6) || btn.value.substring(4, 5));
         }
 
         function cos() {
-            return Math.sin(Math.PI/180*btn.value.substring(4, 6) ||  btn.value.substring(4, 5));
+            return Math.sin(Math.PI / 180 * btn.value.substring(4, 6) || btn.value.substring(4, 5));
         }
 
         function tan() {
-            return Math.sin(Math.PI/180*btn.value.substring(4, 6) ||  btn.value.substring(4, 5));
+            return Math.sin(Math.PI / 180 * btn.value.substring(4, 6) || btn.value.substring(4, 5));
         }
 
         function log() {
-            return Math.sin(Math.PI/180*btn.value.substring(4, 6) ||  btn.value.substring(4, 5));
+            return Math.sin(Math.PI / 180 * btn.value.substring(4, 6) || btn.value.substring(4, 5));
         }
-        
 
-
-        
-
-</script>        
+    </script>
 </body>
+
 </html>
